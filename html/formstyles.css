@@ -1,0 +1,27 @@
+div>form>div>div{
+    margin-top: 4%;
+}
+#image{
+    display: block;
+    margin: auto auto;
+    height: 90px;
+}
+@media screen and (min-width: 500px) {
+#image{
+    height: 200px;
+}
+}
+#fullform{
+    margin-top: 4%;
+}
+.head{
+    font-size: 150%;
+    margin-top: 0%;
+    color: #e53935;
+    border: solid;
+    border-color: #c62828;
+    border-radius: 4px;
+}
+.radiot{
+    margin-top: 5%;
+}

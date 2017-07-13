@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CODING BLOCKS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="formstyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+<style>
+    .output{
+        position: relative;
+        left:30%;
+        display: inline-block;
+        padding: 2%;
+        background-color: orange;
+        width: 40%;
+    }
+    li{
+        margin: 1%;
+    }
+
+</style>
+</head>
+<body>
+<img id= "image" img src="cblogo.png">
+<div id = "fullform" class="row">
+    <div class="col m3 l3 xl3"></div>
+    <form class="input-field col s12 m6 l6 xl6" action="/all" method="post">
+        <div class="row">
+            <div class = "text-flow col s12 m12 l12 xl12 head">Personal Info:</div>
+        </div>
+        <div class="row">
+            <div class="text-flow col s12 m2 l2 xl2">Name:</div>
+            <div class="input-field col s12 m5 l5 xl5">
+                <input placeholder="First Name" id="first_name" type="text" class="validate" name = "fn">
+            </div>
+            <div class="input-field col s12 m5 l5 xl5">
+                <input placeholder="Last Name" id="last_name" type="text" class="validate" name="ln">
+            </div>
+        </div>
+        <div class="row">
+            <div class="text-flow col s12 m2 l2 xl2">Date Of Birth:</div>
+            <div class="input-field col s12 m5 l5 xl5">
+                <input type="date" class="datepicker" id="birthday" name="DOB">
+            </div>
+        </div>
+        <div class="row">
+            <div class="text-flow col s12 m2 l2 xl2">Phone Number:</div>
+            <div class="input-field col s12 m6 l6 xl6">
+                <input placeholder="Telephone" id="telephone" type="tel" class="validate" name="tel">
+            </div>
+        </div>
+        <div class="row">
+            <div class="text-flow col s12 m2 l2 xl2">Email:</div>
+            <div class="input-field col s12 m6 l6 xl6">
+                <input placeholder="Email" id="e-mail" type="email" class="validate" name="email">
+                <label for="e-mail" data-error="wrong" data-success="right"></label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="text-flow col s12 m12 l12 xl12 head">Address:</div>
+        </div>
+        <div class="row">
+            <div class="text-flow col s12 m2 l2 xl2">Building/ House No.:</div>
+            <div class="input-field col s12 m6 l6 xl6">
+                <input placeholder="Building/ House No." id="house-no" type="text" class="validate" name="hno">
+            </div>
+        </div>
+        <div class="row">
+            <div class="text-flow col s12 m2 l2 xl2">Colony/ Village Name:</div>
+            <div class="input-field col s12 m6 l6 xl6">
+                <input placeholder="Colony/ Village Name " id="colony" type="text" class="validate" name="colony">
+            </div>
+        </div>
+        <div class="row">
+            <div class="text-flow col s12 m2 l2 xl2">City:</div>
+            <div class="input-field col s12 m6 l6 xl6">
+                <input placeholder="City " id="city" type="text" class="validate" name="city">
+            </div>
+        </div>
+        <div class="row">
+            <div class="text-flow col s12 m2 l2 xl2">State:</div>
+            <div class="input-field col s12 m6 l6 xl6">
+                <input placeholder="State" id="state" type="text" class="validate" name="state">
+            </div>
+        </div>
+        <div class="row">
+            <div class="text-flow col s12 m12 l12 xl12 head">College:</div>
+        </div>
+        <div class="row">
+            <div class="text-flow col s12 m2 l2 xl2">College Name:</div>
+            <div class="input-field col s12 m6 l6 xl6">
+                <input placeholder="College Name" id="college" type="text" class="validate" name="college">
+            </div>
+        </div>
+        <div class="row">
+            <div class="text-flow col s12 m2 l2 xl2 radiot">Course:</div>
+            <div class="col s12 m7 l7 xl7">
+                <input type="radio" name="course" id="btech">
+                <label for="btech" style="color: black">
+                    B.Tech
+                </label>
+                <input type="radio" name="course" id="mtech">
+                <label for="mtech" style="color: black">
+                    M.Tech
+                </label>
+                <input type="radio" name="course" id="BCA">
+                <label for="BCA" style="color: black">
+                    BCA
+                </label>
+                <input type="radio" name="course" id="MCA">
+                <label for="MCA" style="color: black">
+                    MCA
+                </label>
+                <input type="radio" name="course" id="other">
+                <label for="other" style="color: black">
+                    Other
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="text-flow col s12 m2 l2 xl2 radiot">Branch:</div>
+            <div class="col s12 m7 l7 xl7">
+                <input type="radio" name="branch" id="CS/IT">
+                <label for="CS/IT" style="color: black">
+                   CS/IT
+                </label>
+                <input type="radio" name="branch" id="ECE/EEE">
+                <label for="ECE/EEE" style="color: black">
+                    ECE/EEE
+                </label>
+                <input type="radio" name="branch" id="other">
+                <label for="other" style="color: black">
+                    Other
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="text-flow col s12 m3 l3 xl3 head">Course:</div>
+            <div input-field col s12 m6 l6 xl6>
+                <input type="radio" name="Cb-course" id="Pandora">
+                <label for="Pandora" style="color: black">
+                    Pandora
+                </label>
+                <input type="radio" name="CB-course" id="Elixir">
+                <label for="Elixir" style="color: black">
+                    Elixir
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s5 m3 l3 xl3">
+                <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                    <i class="material-icons right">send</i>
+                </button>
+            </div>
+            <div class="col s2 m6 l6 xl6"></div>
+            <div>
+                <button class="btn waves-effect waves-light" type="reset" name="action">Reset
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!--<div class="output">-->
+    <!--<ul>-->
+        <!--<li>Name : ARVIND KALRA</li>-->
+        <!--<li>DoB : 08/12/97</li>-->
+        <!--<li>Phone Number : 9654361089</li>-->
+        <!--<li>Email : kalarvind97@gmail.com</li>-->
+        <!--<li>Address : N-10, West Patel Nagar, New Delhi - 110008</li>-->
+        <!--<li>College Name: MAIT</li>-->
+
+    <!--</ul>-->
+<!--</div>-->
+</body>
+</html>
